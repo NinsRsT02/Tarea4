@@ -1,9 +1,10 @@
 /*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+ * Clase que representa una cuenta bancaria 
+ * Permite consultar, y modificar el saldo
  */
 
 package entidadFinanciera;
+
 
 
 public class Main {

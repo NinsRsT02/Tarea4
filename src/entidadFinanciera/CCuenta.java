@@ -1,6 +1,9 @@
 /*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+ * Clase que representa una cuenta bancaria 
+ * Permite consultar, y modificar el saldo
+ * @author Victor 
+ * @version 1.0
+ * @since 2025
  */
 
 package entidadFinanciera;
@@ -65,7 +68,8 @@ public class CCuenta {
     }
 
     /**
-     * Nombre de la persona titular
+     * Nombre de la persona titular, cuenta, su saldo de la cuenta bancaria
+     * y el tipo de interes que tiene
      */
     private String nombre;
     private String cuenta;
@@ -88,7 +92,12 @@ public static final String ERRORCANTIDADNEGATIVA = "No se puede ingresar una can
     public double estado(){
         return this.getSaldo();
     }
-
+   /**
+     * Ingresa una cantidad en la cuenta.
+     * 
+     * @param cantidad Cantidad a ingresar.
+     * @throws Exception Si la cantidad es negativa.
+     */
 public void ingresar(double cantidad) throws Exception {
     if (cantidad < 0) {
         throw new Exception(ERRORCANTIDADNEGATIVA);
